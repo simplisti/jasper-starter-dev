@@ -32,7 +32,7 @@ Vagrant.configure(2) do |config|
 		curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 		# Install Symfony binary globally
-        wget https://get.symfony.com/cli/installer -O - | bash && mv /root/.symfony/bin/symfony /usr/local/bin/symfon
+        wget https://get.symfony.com/cli/installer -O - | bash && mv /root/.symfony/bin/symfony /usr/local/bin/symfony
     SHELL
 
     config.vm.provision "shell", inline: <<-JASPER

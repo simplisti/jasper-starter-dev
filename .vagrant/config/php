@@ -1,0 +1,8 @@
+; Use custom compiled extension not default debian version
+;zend_extension = /usr/lib/php/20190902/xdebug.so
+;zend_extension = xdebug.so
+
+; Change timezone
+date.timezone = 'America/Winnipeg'
+
+error_reporting = E_ALL

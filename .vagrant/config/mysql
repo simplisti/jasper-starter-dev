@@ -1,0 +1,3 @@
+# Allow host machine to connect to DB remotely
+[mysqld]
+bind-address = 0.0.0.0

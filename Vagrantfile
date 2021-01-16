@@ -52,5 +52,5 @@ Vagrant.configure(2) do |config|
     JASPER
 
 	config.vm.synced_folder ".", "/vagrant", type: "virtualbox"
-	config.ssh.extra_args = ["-t", "cd /vagrant; bash --login"]
+	config.ssh.extra_args = ["-t", "cd /vagrant/project; bash --login"]
 end

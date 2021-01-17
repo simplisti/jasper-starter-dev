@@ -1,6 +1,7 @@
 Vagrant.configure(2) do |config|
   config.vm.box = "debian/contrib-stretch64"
 
+  config.vm.network :forwarded_port, guest: 8000, host: 8080 # www
   config.vm.network :forwarded_port, guest: 3306, host: 3306 # sql
 
   config.vm.provider "virtualbox" do |v|
